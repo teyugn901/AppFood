@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.myappfood.appfood">
+
+    <uses-sdk
+        android:minSdkVersion="INSERT_YOUR_DESIRED_minSdkVersion_HERE"
+        tools:overrideLibrary="com.paypal.android.sdk.payments" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Myappfood"
+        tools:replace="android:theme">
+        <activity
+            android:name="com.myappfood.appfood.ShowComment"
+            android:exported="false" />
+        <activity
+            android:name="com.myappfood.appfood.OrderStatus"
+            android:exported="false" />
+        <activity
+            android:name="com.myappfood.appfood.Cart"
+            android:exported="false" />
+        <activity
+            android:name="com.myappfood.appfood.FoodDetail"
+            android:exported="false" />
+        <activity
+            android:name="com.myappfood.appfood.Food_list"
+            android:exported="false" />
+        <activity
+            android:name="com.myappfood.appfood.Home"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.Myappfood.NoActionBar" />
+        <activity
+            android:name="com.myappfood.appfood.Signup"
+            android:exported="false" />
+        <activity
+            android:name="com.myappfood.appfood.Signin"
+            android:exported="false" />
+        
+
+        <activity
+            android:name="com.myappfood.appfood.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.myappfood.appfood.Service.MyFirebaseIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.myappfood.appfood.Service.MyFirebaseMessaging"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

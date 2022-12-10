@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_restaurant"
+            android:title="Menu" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_shopping"
+            android:title="Cart" />
+        <item
+            android:id="@+id/nav_orthes"
+            android:icon="@drawable/ic_baseline_access_time_24"
+            android:title="Orthes" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_idicon"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_chage_pwd"
+            android:icon="@drawable/ic_baseline_security_24"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Sign Out" />
+    </group>
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true">
+        <info.hoang8f.widget.FButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignup"
+            android:text="SignUp"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:shadowColor="@color/black"
+            app:shadowEnabled="true"
+            app:shadowHeight="6dp"
+            app:cornerRadius="10dp"/>
+
+        <info.hoang8f.widget.FButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignin"
+            android:text="SignIn"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:shadowColor="@color/black"
+            app:shadowEnabled="true"
+            android:backgroundTint="#CD6E6E"
+            app:shadowHeight="6dp"
+            app:cornerRadius="10dp"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/logo_tn239store" />
+
+
+</RelativeLayout>

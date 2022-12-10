@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_margin="0dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/cart_image"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_item_name"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:text="Food 1"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cart_item_price"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:text="100,00"
+                android:textStyle="italic"/>
+        </LinearLayout>
+<!--        <ImageView-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_gravity="center_vertical|end"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:id="@+id/cart_item_count"/>-->
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_quantity"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="18dp"
+            app:textSize="8sp"
+            app:backGroundColor="#7FCC71"
+            app:initialNumber="1"
+            app:finalNumber="20">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="15dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
